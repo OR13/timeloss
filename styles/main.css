@@ -2,9 +2,28 @@ html, body {
   padding: 0;
   margin: 0;
   background-color: black;
+  
 }
 
 #canvas {
   display: block;
-  background-color: blueviolet;
+  background-color: black;
+}
+
+#controls {
+  position: absolute;
+  padding: 8px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: monospace;
+  font-size: 16px;
+  padding: 4px;
+  background-color: rgb(238, 237, 237);
+}
+
+button:hover{
+  background-color: rgb(139, 139, 139);
 }
