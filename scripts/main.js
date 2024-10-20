@@ -15,8 +15,8 @@ async function main() {
   const gl = canvas.getContext("webgl");
   var program = gl.createProgram();
   // add shaders
-  let vertexShaderSource = await (await fetch('/shaders/vertex-shader.glsl')).text() 
-  let fragmentShaderSource = await (await fetch('/shaders/fragment-shader.glsl')).text() 
+  let vertexShaderSource = await (await fetch('./shaders/vertex-shader.glsl')).text() 
+  let fragmentShaderSource = await (await fetch('./shaders/fragment-shader.glsl')).text() 
   addShader(gl, program, vertexShaderSource, gl.VERTEX_SHADER);
   addShader(gl, program, fragmentShaderSource, gl.FRAGMENT_SHADER);
   // link & use program
